@@ -8,10 +8,10 @@ To run the code in command line:
   >`$ mvn compile`</p>
   >`$ mvn test`</p>
 <p>If done correctly, for each index in the index folder (a total of six), a test will run that calculates the precision at 1 (P@1) and mean reciprocal rank (MMR) using four scoring methods:</p>
-	- Vector Space Model and tf/idf (default)</p>
-	- Boolean Model</p>
-	- BM25 Model</p>
-	- Jelinek Mercer Model (post due date edit: with 0.5 smoothing value)</p>
+:  - Vector Space Model and tf/idf (default)</p>
+:  - Boolean Model</p>
+:  - BM25 Model</p>
+:  - Jelinek Mercer Model (post due date edit: with 0.5 smoothing value)</p>
 
 6) Optionally you can run a single test with the following command:
 >`$ mvn -Dtest=<TestName> test`</p>

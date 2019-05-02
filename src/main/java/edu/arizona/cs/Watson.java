@@ -37,19 +37,19 @@ public class Watson {
 			QueryEngine qeBM25 = new QueryEngine(indexPath, useLemma, useStem, new BM25Similarity());
 			QueryEngine qeJM = new QueryEngine(indexPath, useLemma, useStem, new LMJelinekMercerSimilarity((float) 0.5));
 			
-//			System.out.println("Running similarity 1.");
-//			String vmtfidf = qe.runQueries(queries);
-//			System.out.println("Running similarity 2.");
-//			String bool = qeBool.runQueries(queries);
-//			System.out.println("Running similarity 3.");
-//			String bm25 = qeBM25.runQueries(queries);
+			System.out.println("Running similarity 1.");
+			String vmtfidf = qe.runQueries(queries);
+			System.out.println("Running similarity 2.");
+			String bool = qeBool.runQueries(queries);
+			System.out.println("Running similarity 3.");
+			String bm25 = qeBM25.runQueries(queries);
 			System.out.println("Running similarity 4.");
 			String jm = qeJM.runQueries(queries);
 			
-//			System.out.println();
-//			System.out.println("Using the default Vector Space Model and tf/idf:\n" + vmtfidf);
-//			System.out.println("Using the Boolean Model:\n" + bool);
-//			System.out.println("Using the BM25 Model:\n" + bm25);
+			System.out.println();
+			System.out.println("Using the default Vector Space Model and tf/idf:\n" + vmtfidf);
+			System.out.println("Using the Boolean Model:\n" + bool);
+			System.out.println("Using the BM25 Model:\n" + bm25);
 			System.out.println("Using the Jelinek Mercer Model:\n" + jm);
 		}
 	}

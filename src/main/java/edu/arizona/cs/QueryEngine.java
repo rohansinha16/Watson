@@ -40,7 +40,7 @@ public class QueryEngine {
 		this.indexPath = indexPath;
 		this.useLemma = useLemma;
 		this.useStem = useStem;
-		this.test = true;
+		this.test = false;
 		this.s = Optional.empty();
 	}
 

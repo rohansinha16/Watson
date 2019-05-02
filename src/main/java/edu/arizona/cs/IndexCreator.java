@@ -197,10 +197,10 @@ public class IndexCreator {
 	 */
 	private int numAtEnd(String src, String token) {
 		int i = 0;
-		// 
+		// src is larger than token and end of src = token
 		while(src.length() >= token.length() && src.substring(src.length() - token.length()).equals(token)) {
 			i++;
-			src = src.substring(0, src.length() - token.length());
+			src = src.substring(0, src.length() - token.length()); // remove token from end
 		}
 		return i;
 	}

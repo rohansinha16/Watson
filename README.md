@@ -1,12 +1,13 @@
 # How to run the code:
-To run the code in command line.
+To run the code in command line:
 1) pull/clone the code from: github.com/rohansinha16/Watson
-2) download the index folder from (it includes 6 indices so it’s not small):
+2) download the index folder from (it includes 6 indices so it’s 3.76 GB): https://drive.google.com/file/d/1a6zP2Id01Ow9iGngDItK6XVy2mZHJ3kp/view?usp=sharing
 3) put index folder in the pulled/cloned folder
 4) navigate to the location of the folder from cmd line/terminal
 5) type the following:
 $ mvn compile
 $ mvn test
+
 
 If done correctly, for each index in the index folder (a total of six), a test will run that calculates the precision at 1 (P@1) and mean reciprocal rank (MMR) using four scoring methods:
 Vector Space Model and tf/idf (default)

@@ -5,23 +5,19 @@ To run the code in command line:
 3) put index folder in the pulled/cloned folder
 4) navigate to the location of the folder from cmd line/terminal
 5) type the following:
-<p>
-  >`$ mvn compile`
-  >`$ mvn test`
-</p>
+  >`$ mvn compile`</p>
+  >`$ mvn test`</p>
 <p>If done correctly, for each index in the index folder (a total of six), a test will run that calculates the precision at 1 (P@1) and mean reciprocal rank (MMR) using four scoring methods:</p>
-<p>
-	* Vector Space Model and tf/idf (default)
-	* Boolean Model
-	* BM25 Model
-	* Jelinek Mercer Model (post due date edit: with 0.5 smoothing value)
-</p>
+	* Vector Space Model and tf/idf (default)</p>
+	* Boolean Model</p>
+	* BM25 Model</p>
+	* Jelinek Mercer Model (post due date edit: with 0.5 smoothing value)</p>
 
 6) Optionally you can run a single test with the following command:
->`$ mvn -Dtest=<TestName> test`
+>`$ mvn -Dtest=<TestName> test`</p>
 <p>The test names are Test<Capitalized Index Name>, where the index names can be found at the end of the “Indexing and Retrieval” section, along with comments about their different properties. To test the none or lemmaNoTpl indices, the following commands would be used:</p>
->`$ mvn -Dtest=TestNone test`
->`$ mvn -Dtest=TestLemmaNoTpl test`
+>`$ mvn -Dtest=TestNone test`</p>
+>`$ mvn -Dtest=TestLemmaNoTpl test`</p>
 
 # The Code:
 There are four classes in this project. They are all documented fairly thouroghly.

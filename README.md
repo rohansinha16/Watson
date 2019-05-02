@@ -5,8 +5,8 @@ To run the code in command line:
 3) put index folder in the pulled/cloned folder
 4) navigate to the location of the folder from cmd line/terminal
 5) type the following:
-><p>`$ mvn compile`</p>
-><p>`$ mvn test`</p>
+<p>>`$ mvn compile`</p>
+<p>>`$ mvn test`</p>
 If done correctly, for each index in the index folder (a total of six), a test will run that calculates the precision at 1 (P@1) and mean reciprocal rank (MMR) using four scoring methods:
 	* Vector Space Model and tf/idf (default)
 	* Boolean Model</p>

@@ -5,19 +5,25 @@ To run the code in command line:
 3) put index folder in the pulled/cloned folder
 4) navigate to the location of the folder from cmd line/terminal
 5) type the following:
-$ mvn compile
-$ mvn test
-
+	$ mvn compile
+	$ mvn test
 
 If done correctly, for each index in the index folder (a total of six), a test will run that calculates the precision at 1 (P@1) and mean reciprocal rank (MMR) using four scoring methods:
-Vector Space Model and tf/idf (default)
-Boolean Model
-BM25 Model
-Jelinek Mercer Model
+	Vector Space Model and tf/idf (default)
+	Boolean Model
+	BM25 Model
+	Jelinek Mercer Model (post due date edit: with 0.5 smoothing value)
+
+6) (Post due date edit) Optionally you can run a single test with the following command:
+	$ mvn -Dtest=<TestName> test
+The test names are Test<Capitalized Index Name>, where the index names can be found at the end of the “Indexing and Retrieval” section, along with comments about their different properties. To test the none or lemmaNoTpl indices, the following commands would be used:
+	$ mvn -Dtest=TestNone test
+	$ mvn -Dtest=TestLemmaNoTpl test
+
 
 # The Code:
 There are four classes in this project. They are all documented fairly thouroghly.
-Watson.java – includes main function, generally calls QueryEngine or IndexCreator. Has several settings as variables that will be passed to QueryEngine/IndexCreator for easy use of the program.
+Watson.java – includes main function, generally calls QueryEngine or IndexCreator. Has several settings as variables that will be passed to QueryEngine/IndexCreator for easy use of the program. However, all indices included in the linked index folder already have a test associated with them and can be run from part 6 of the instructions above. These settings should be useful if you'd like to test something different.
 ## File settings:
 	String indexPath - index location name, used by both
 	String queries – queries filename, used by QueryEngine
